@@ -6,6 +6,13 @@ edition = "2018"
 license = "MIT"
 
 [dependencies]
-bitcoin = "0.23.0"
+bitcoin = { git = "https://github.com/rust-bitcoin/rust-bitcoin.git", rev = "c8c187efd2d4152c1b1d86fcb2c18ce7bdee54db" }
 golomb-coded-set = "0.1.0"
 bitcoin_hashes = "0.9.0"
+
+[dev-dependencies]
+hex = "=0.3.2"
+serde_derive = "<1.0.99"
+serde_json = "<1.0.45"
+serde_test = "1"
+secp256k1 = { version = "0.17.1", features = ["rand-std"] }
