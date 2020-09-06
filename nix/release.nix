@@ -11,7 +11,7 @@ in project {
 
   };
   shellTools = pkgs: with pkgs.haskellPackages; [
-
+    pkgs.cargo
   ];
   overlays = [
     (import ./rust/rust-overlay.nix)
