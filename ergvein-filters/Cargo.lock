@@ -13,7 +13,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6a32c9d2fa897cfbb0db45d71e3d2838666194abc4828c0f994e4b5c3bf85ba4"
 dependencies = [
  "bech32",
- "bitcoin_hashes",
+ "bitcoin_hashes 0.7.6",
  "secp256k1",
 ]
 
@@ -22,6 +22,12 @@ name = "bitcoin_hashes"
 version = "0.7.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b375d62f341cef9cd9e77793ec8f1db3fc9ce2e4d57e982c8fe697a2c16af3b6"
+
+[[package]]
+name = "bitcoin_hashes"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9ed2ce8078898876263683749be6f50af005cc77f93be1422f1c56fecf0b34d7"
 
 [[package]]
 name = "cc"
@@ -34,6 +40,7 @@ name = "ergvein-filters"
 version = "0.1.0"
 dependencies = [
  "bitcoin",
+ "bitcoin_hashes 0.9.0",
  "golomb-coded-set",
 ]
 
@@ -43,7 +50,7 @@ version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "434c4c82634d00bb12244efd878eb37acc15f5fe2e86e7e59e1c29d01921b095"
 dependencies = [
- "bitcoin_hashes",
+ "bitcoin_hashes 0.7.6",
 ]
 
 [[package]]
