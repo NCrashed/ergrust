@@ -34,6 +34,16 @@ name = "ergvein-filters"
 version = "0.1.0"
 dependencies = [
  "bitcoin",
+ "golomb-coded-set",
+]
+
+[[package]]
+name = "golomb-coded-set"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "434c4c82634d00bb12244efd878eb37acc15f5fe2e86e7e59e1c29d01921b095"
+dependencies = [
+ "bitcoin_hashes",
 ]
 
 [[package]]
